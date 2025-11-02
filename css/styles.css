@@ -32,8 +32,10 @@ img {
 
 .container {
   max-width: 320px;
-  padding: 0 16px;
-  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -874,8 +876,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
-    padding: 0 16px;
+    max-width: 768px;
   }
 
   .header-nav {
@@ -904,7 +905,6 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-    justify-content: space-around;
   }
 
   .nav-link {
@@ -943,7 +943,6 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin: left 120px;;
   }
 
   .contacts-link {
@@ -1016,7 +1015,7 @@ img {
   }
 
   .team-list {
-    gap: 64px 24px;
+    gap: 24px;
   }
 
   .team-item {
@@ -1068,13 +1067,11 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .container,
-  .team-section > .container,
-  .container.footer-container {
-    width: 1158px;
-    padding: 0 15px;
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-
   .header-logo {
     padding: 24px 0;
     margin-right: 76px;
@@ -1160,6 +1157,7 @@ img {
   .team-section {
     padding-top: 120px;
     padding-bottom: 120px;
+    width: 100%;
   }
 
   .team-list {
@@ -1168,7 +1166,7 @@ img {
 
   .team-item {
     padding: 0;
-    width: calc((100% - 3 * 24px) / 4);
+     width: calc((100% - 72px) / 4);
   }
 
   .portfolio-section {
