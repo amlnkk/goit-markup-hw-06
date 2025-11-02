@@ -904,6 +904,7 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
+    justify-content: space-around;
   }
 
   .nav-link {
@@ -942,6 +943,7 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    margin: left 120px;;
   }
 
   .contacts-link {
@@ -998,7 +1000,6 @@ img {
   }
 
   .features-list {
-  
     gap: 72px 24px;
   }
 
@@ -1006,11 +1007,11 @@ img {
     width: calc((100% - 24px) / 2);
   }
 
-  .features-item .icon-container {
+  .icon-container {
     display: none;
   }
 
-  .team-section > .container {
+  .team-section .container {
     width: 584px;
   }
 
@@ -1106,8 +1107,7 @@ img {
       url(../images/hero-bg.jpg);
   }
 
-    @media screen and (min-resolution: 2x),
-      (-webkit-min-device-pixel-ratio: 2) {
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
     .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
@@ -1128,15 +1128,14 @@ img {
 
   .features-list {
     display: flex;
-    flex-wrap: nowrap;
     gap: 24px;
   }
 
   .features-item {
-    width: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
   }
 
-  .features-item .icon-container {
+  .icon-container {
     display: flex;
     justify-content: center;
     align-items: center;
